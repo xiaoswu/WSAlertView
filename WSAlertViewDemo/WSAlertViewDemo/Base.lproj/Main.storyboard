@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nx5-Z8-ldX">
+                                <rect key="frame" x="126" y="318" width="123" height="30"/>
+                                <state key="normal" title="左进右出显示视图"/>
+                                <connections>
+                                    <action selector="leftTorightShowAlertView" destination="BYZ-38-t0r" eventType="touchUpInside" id="iT6-Jj-rev"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8kW-Za-pMC">
+                                <rect key="frame" x="126" y="378" width="123" height="30"/>
+                                <state key="normal" title="上进下出显示视图"/>
+                                <connections>
+                                    <action selector="topToBottomShowAlertView" destination="BYZ-38-t0r" eventType="touchUpInside" id="YEl-rz-b7B"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xxS-Eh-U6w">
+                                <rect key="frame" x="141" y="258" width="92" height="30"/>
+                                <state key="normal" title="缩放显示视图"/>
+                                <connections>
+                                    <action selector="scaleShowAlertView" destination="BYZ-38-t0r" eventType="touchUpInside" id="B3O-49-8AT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xxS-Eh-U6w" firstAttribute="centerX" secondItem="nx5-Z8-ldX" secondAttribute="centerX" id="1WS-yo-Uta"/>
+                            <constraint firstItem="8kW-Za-pMC" firstAttribute="centerX" secondItem="nx5-Z8-ldX" secondAttribute="centerX" id="35n-0Z-3uE"/>
+                            <constraint firstItem="8kW-Za-pMC" firstAttribute="top" secondItem="nx5-Z8-ldX" secondAttribute="bottom" constant="30" id="6ZG-cc-qYv"/>
+                            <constraint firstItem="nx5-Z8-ldX" firstAttribute="top" secondItem="xxS-Eh-U6w" secondAttribute="bottom" constant="30" id="NKU-Vc-iZ3"/>
+                            <constraint firstItem="nx5-Z8-ldX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="q64-CX-0MA"/>
+                            <constraint firstItem="nx5-Z8-ldX" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="uju-Q7-HQH"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
