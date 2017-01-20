@@ -51,9 +51,4 @@
 - (void)setTapActionWithBlock:(void (^)(void))block;
 
 
-
-
-
-
-
 @end

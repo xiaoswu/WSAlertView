@@ -174,6 +174,4 @@ static const char *ActionHandlerTapGestureKey;
     }
 }
 
-
-
 @end
